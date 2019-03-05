@@ -1,0 +1,22 @@
+﻿<Window x:Class="RestSharpTestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestSharpTestApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Run" HorizontalAlignment="Left" Height="48" Margin="224,110,0,0" VerticalAlignment="Top" Width="132" Click="Button_Click"/>
+        <DatePicker x:Name="_datePicker" HorizontalAlignment="Left" Margin="444,123,0,0" VerticalAlignment="Top" CalendarClosed="DatePicker_CalendarClosed" SelectedDateFormat="Short"/>
+        <Label Content="Timestamp: " HorizontalAlignment="Left" Margin="444,183,0,0" VerticalAlignment="Top"/>
+        <Label Name="timestampValue" Content="" HorizontalAlignment="Left" Margin="523,183,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_hours_tb" HorizontalAlignment="Left" Height="23" Margin="563,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20" Text="00" TextChanged="_hours_tb_TextChanged"/>
+        <TextBox x:Name="_minutes_tb" HorizontalAlignment="Left" Height="23" Margin="599,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="21" Text="00" TextChanged="_hours_tb_TextChanged"/>
+        <TextBox x:Name="_seconds_tb" HorizontalAlignment="Left" Height="23" Margin="636,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20" Text="00" TextChanged="_hours_tb_TextChanged"/>
+        <Label Content=":" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="585,123,0,0"/>
+        <Label Content=":" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="622,123,0,0"/>
+        <DataGrid x:Name="_grid" HorizontalAlignment="Left" Height="215" Margin="195,183,0,0" VerticalAlignment="Top" Width="188" />
+
+    </Grid>
+</Window>
